@@ -1,0 +1,266 @@
+{
+  "sources": [
+    {
+      "id": "d9377537-e593-4d82-9a36-c93f54f2be73",
+      "name": "sample-bicycles",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "537f8187-ba51-4a2b-896b-5896c643881c",
+      "name": "Eventhouse",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "7d41f537-43a6-43e2-be66-96a7d49728ee",
+        "itemId": "106beb95-8f91-415c-93d9-3ee4ce551768",
+        "databaseName": "BicycleAnalysis_Eventhouse",
+        "tableName": "Bike_Data",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "ManageFields"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "ManageFields",
+          "schema": {
+            "columns": [
+              {
+                "name": "BikepointID",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Street",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Neighbourhood",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Latitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Longitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Bikes",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Empty_Docks",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "current_time",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "1eed7af9-751c-4119-8711-ba498d2b4cd5",
+      "name": "BicycleAnalysis_Eventstream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "sample-bicycles"
+        }
+      ]
+    }
+  ],
+  "operators": [
+    {
+      "name": "ManageFields",
+      "type": "ManageFields",
+      "inputNodes": [
+        {
+          "name": "BicycleAnalysis_Eventstream-stream"
+        }
+      ],
+      "properties": {
+        "columns": [
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "BikepointID",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "BikepointID"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "Street",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "Street"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "Neighbourhood",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "Neighbourhood"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "Latitude",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "Latitude"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "Longitude",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "Longitude"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "No_Bikes",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "No_Bikes"
+          },
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "expressionType": "ColumnReference",
+                "node": null,
+                "columnName": "No_Empty_Docks",
+                "columnPathSegments": []
+              }
+            },
+            "alias": "No_Empty_Docks"
+          },
+          {
+            "type": "FunctionCall",
+            "properties": {
+              "functionName": "SystemTimestamp",
+              "arguments": []
+            },
+            "alias": "current_time"
+          }
+        ]
+      },
+      "inputSchemas": [
+        {
+          "name": "BicycleAnalysis_Eventstream-stream",
+          "schema": {
+            "columns": [
+              {
+                "name": "BikepointID",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Street",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Neighbourhood",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Latitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Longitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Bikes",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Empty_Docks",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "compatibilityLevel": "1.1"
+}

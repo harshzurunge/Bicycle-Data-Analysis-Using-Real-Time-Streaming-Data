@@ -1,0 +1,542 @@
+{
+  "schema_version": 68,
+  "autoRefresh": {
+    "enabled": true,
+    "defaultInterval": "30s",
+    "minInterval": "30s"
+  },
+  "tiles": [
+    {
+      "id": "33ce4bd8-f991-42bc-8dd7-fc7cdb920179",
+      "title": "Total Active Stations",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b7b8d45c-316e-4142-997f-5f194c9c1bd5"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": "Count",
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "45d7240c-20bd-4c37-8fc7-e97aabf356d3",
+      "title": "Total Available Bikes",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 4,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "97a80a58-c8e8-483e-87fb-cb32356321b8"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "e2822077-c4d9-415a-ac08-a80dfa6a2dae",
+      "title": "Total Empty Docks",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 8,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a63b5983-da8d-495e-ae1e-551be1d05de3"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "558aa1b2-10a1-4a02-a12f-40589abccaed",
+      "title": "Empty Stations",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 12,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "70328f6a-a703-4b7f-b58c-93cb35b03f19"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "6f55ceee-8561-49e1-bb07-a12662d15cab",
+      "title": "Full Stations",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 16,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "2ed75ee8-bab6-4990-a16b-fe48fa8a95dd"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "0ddf48bc-8af2-4007-808c-4025172f0fe9",
+      "title": "Stations with low bikes",
+      "visualType": "card",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 20,
+        "y": 0,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b6137942-5afb-4a66-a046-38f5744f6010"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "large",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "b05c0800-dd90-4dac-9e33-3bb0e0750281",
+      "title": "LIVE OPERATIONS MAP",
+      "visualType": "map",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 0,
+        "y": 3,
+        "width": 12,
+        "height": 7
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "8c8f9ef9-d70a-44d8-9a5e-5d9a24b3a20f"
+      },
+      "visualOptions": {
+        "map__latitudeColumn": "Latitude",
+        "map__longitudeColumn": null,
+        "map__labelColumn": "Availability_Status",
+        "map__sizeColumn": "Total_Capacity",
+        "map__sizeDisabled": false,
+        "map__geoType": "numeric",
+        "map__geoPointColumn": null
+      }
+    },
+    {
+      "id": "006fcdb1-0ae3-44cc-82f1-91d226dccc24",
+      "title": "Send Team Now",
+      "hideTitle": true,
+      "visualType": "table",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 12,
+        "y": 3,
+        "width": 12,
+        "height": 7
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0c10d968-aa78-4e16-bab0-541570c17a7f"
+      },
+      "visualOptions": {
+        "table__enableRenderLinks": false,
+        "colorRulesDisabled": false,
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "crossFilter": [],
+        "drillthrough": [],
+        "table__renderLinks": [
+          {
+            "urlColumn": "Status",
+            "displayColumn": "Status",
+            "disabled": false
+          }
+        ],
+        "colorRules": [
+          {
+            "id": "e005e2eb-c3b0-4570-9fb5-a9cf001ba9e1",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "rows",
+            "conditions": [
+              {
+                "values": [
+                  "Empty Station"
+                ],
+                "operator": "==",
+                "column": "Status"
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "bold",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "",
+            "visualType": "table"
+          },
+          {
+            "id": "9530e9e3-4290-4d79-a0b0-554414f0967f",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "rows",
+            "conditions": [
+              {
+                "operator": "==",
+                "column": "Status",
+                "values": [
+                  "Full Station"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "bold",
+            "color": "green",
+            "tag": "",
+            "icon": null,
+            "ruleName": "",
+            "visualType": "table"
+          },
+          {
+            "id": "f5654799-c59c-4875-a0c3-465580509af1",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "rows",
+            "conditions": [
+              {
+                "operator": "==",
+                "column": "Status",
+                "values": [
+                  "Low Bikes"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "bold",
+            "color": "yellow",
+            "tag": "",
+            "icon": null,
+            "ruleName": "",
+            "visualType": "table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a2f0b659-5cc7-4a77-b634-64eccbe28523",
+      "title": "Total Bikes by Neighbourhood",
+      "visualType": "bar",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 0,
+        "y": 10,
+        "width": 8,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "05531a96-e642-4fb2-a1e0-c1acc7942941"
+      },
+      "visualOptions": {
+        "multipleYAxes": {
+          "base": {
+            "id": "-1",
+            "label": "",
+            "columns": [],
+            "yAxisMaximumValue": null,
+            "yAxisMinimumValue": null,
+            "yAxisScale": "linear",
+            "horizontalLines": []
+          },
+          "additional": [],
+          "showMultiplePanels": false
+        },
+        "seriesColors": {},
+        "hideLegend": true,
+        "legendLocation": "bottom",
+        "xColumnTitle": "",
+        "xColumn": null,
+        "yColumns": null,
+        "seriesColumns": null,
+        "xAxisScale": "linear",
+        "verticalLine": "",
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "forceAxisTicks": false,
+        "crossFilter": [],
+        "drillthrough": []
+      }
+    },
+    {
+      "id": "9b7c3771-9a60-4205-8319-2d62d7b973ff",
+      "title": "Avg Utilization % by Neighbourhood",
+      "visualType": "column",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 16,
+        "y": 10,
+        "width": 8,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "9433e2e1-b67e-4b39-8af3-91fba6782855"
+      },
+      "visualOptions": {
+        "multipleYAxes": {
+          "base": {
+            "id": "-1",
+            "label": "",
+            "columns": [],
+            "yAxisMaximumValue": null,
+            "yAxisMinimumValue": null,
+            "yAxisScale": "linear",
+            "horizontalLines": []
+          },
+          "additional": [],
+          "showMultiplePanels": false
+        },
+        "seriesColors": {},
+        "hideLegend": true,
+        "legendLocation": "bottom",
+        "xColumnTitle": "",
+        "xColumn": null,
+        "yColumns": null,
+        "seriesColumns": null,
+        "xAxisScale": "linear",
+        "verticalLine": "",
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "forceAxisTicks": false,
+        "crossFilter": [],
+        "drillthrough": []
+      }
+    },
+    {
+      "id": "f8ce7ff4-cf38-45db-af61-303c247e276a",
+      "title": "Total Bikes Over Time",
+      "visualType": "line",
+      "pageId": "d9aca44e-d64b-4690-bff7-2ed24f33b64d",
+      "layout": {
+        "x": 8,
+        "y": 10,
+        "width": 8,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ceab7ee0-764a-492d-b3a9-7985a45a2928"
+      },
+      "visualOptions": {
+        "multipleYAxes": {
+          "base": {
+            "id": "-1",
+            "label": "",
+            "columns": [],
+            "yAxisMaximumValue": null,
+            "yAxisMinimumValue": null,
+            "yAxisScale": "linear",
+            "horizontalLines": []
+          },
+          "additional": [],
+          "showMultiplePanels": false
+        },
+        "seriesColors": {},
+        "hideLegend": true,
+        "legendLocation": "bottom",
+        "xColumnTitle": "",
+        "xColumn": null,
+        "yColumns": null,
+        "seriesColumns": null,
+        "xAxisScale": "linear",
+        "verticalLine": "",
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "forceAxisTicks": false,
+        "crossFilter": [],
+        "drillthrough": []
+      }
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "3e533da3-6dbc-497d-8896-0ba1f53ae3c7",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "kind": "kusto-trident",
+      "id": "e6cc3b67-b278-42b7-b790-ad77159575cd",
+      "name": "BicycleAnalysis_Eventhouse",
+      "clusterUri": "https://trd-tr4d3zw9sb5838zebg.z1.kusto.fabric.microsoft.com",
+      "database": "106beb95-8f91-415c-93d9-3ee4ce551768",
+      "workspace": "00000000-0000-0000-0000-000000000000",
+      "scopeId": "kusto-trident"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "d9aca44e-d64b-4690-bff7-2ed24f33b64d"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\nLatestStationSnapshot\n| count",
+      "id": "b7b8d45c-316e-4142-997f-5f194c9c1bd5",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| summarize Total_Bikes = sum(No_Bikes)",
+      "id": "97a80a58-c8e8-483e-87fb-cb32356321b8",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| summarize Total_Empty_Docks = sum(No_Empty_Docks)",
+      "id": "a63b5983-da8d-495e-ae1e-551be1d05de3",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| where No_Bikes == 0\n| count",
+      "id": "70328f6a-a703-4b7f-b58c-93cb35b03f19",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| where No_Empty_Docks == 0\n| count",
+      "id": "2ed75ee8-bab6-4990-a16b-fe48fa8a95dd",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| where No_Bikes < 5\n| count",
+      "id": "b6137942-5afb-4a66-a046-38f5744f6010",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | where current_time > ago(10m)   // avoid stale stations\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| extend \n    Total_Capacity = No_Bikes + No_Empty_Docks,\n    Availability_Status = case(\n        No_Bikes == 0, \"Empty\",\n        No_Bikes <= 10, \"Low\",\n        \"Healthy\"\n    )\n| project \n    BikepointID,\n    Street,\n    Neighbourhood,\n    Latitude,\n    Longitude,\n    No_Bikes,\n    No_Empty_Docks,\n    Total_Capacity,\n    Availability_Status",
+      "id": "8c8f9ef9-d70a-44d8-9a5e-5d9a24b3a20f",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | where current_time > ago(10m)\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| extend \n    Status = case(\n        No_Bikes == 0, \"Empty Station\",\n        No_Empty_Docks == 0, \"Full Station\",\n        No_Bikes <= 5, \"Low Bikes\",\n        \"Healthy\"\n    ),\n    Severity = case(\n        No_Bikes == 0, 1,\n        No_Empty_Docks == 0, 2,\n        No_Bikes <= 5, 3,\n        4\n    )\n| where Status != \"Healthy\"\n| sort by Severity asc, No_Bikes asc\n| project \n    BikepointID,\n    Neighbourhood,\n    No_Bikes,\n    No_Empty_Docks,\n    Status",
+      "id": "0c10d968-aa78-4e16-bab0-541570c17a7f",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | where current_time > ago(10m)\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| summarize Total_Bikes = sum(No_Bikes) by Neighbourhood\n| sort by Total_Bikes desc",
+      "id": "05531a96-e642-4fb2-a1e0-c1acc7942941",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "let LatestStationSnapshot =\n    Bike_Data\n    | where current_time > ago(10m)\n    | summarize arg_max(current_time, *) by BikepointID;\n\nLatestStationSnapshot\n| extend Utilization = \n    (No_Bikes * 100.0) / (No_Bikes + No_Empty_Docks)\n| summarize Avg_Utilization = round(avg(Utilization),2) \n    by Neighbourhood\n| sort by Avg_Utilization desc",
+      "id": "9433e2e1-b67e-4b39-8af3-91fba6782855",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "e6cc3b67-b278-42b7-b790-ad77159575cd"
+      },
+      "text": "Bike_Data\n| where current_time > ago(60m)\n| summarize Total_Bikes = sum(No_Bikes) \n    by bin(current_time, 5m)\n| sort by current_time asc",
+      "id": "ceab7ee0-764a-492d-b3a9-7985a45a2928",
+      "usedVariables": []
+    }
+  ]
+}
